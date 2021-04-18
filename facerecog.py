@@ -31,7 +31,7 @@ def draw_boundary(img,classifier,scaleFactor,minNeighbors,color,clf):
       coords=[]
       for(x,y,w,h) in features:
             cv2.rectangle(img,(x,y),(x+w,y+h),color,2)
-            id,con = clf.predict(gray[y:y+h,x:x+w])
+            ,con = clf.predict(gray[y:y+h,x:x+w])
             
             
             if id ==1 :
